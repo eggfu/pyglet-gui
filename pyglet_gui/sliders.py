@@ -110,7 +110,7 @@ class HorizontalSlider(Slider):
         self.min_width = width
 
     def layout(self):
-        super().layout()
+        super(HorizontalSlider, self).layout()
         if self._bar is not None:
             left, right, top, bottom = self._padding
             self._bar.update(self.x + left, self.y + bottom,

@@ -57,15 +57,15 @@ class FocusButton(Button, FocusMixin):
         FocusMixin.__init__(self)
 
     def load_graphics(self):
-        super().load_graphics()
+        super(FocusButton, self).load_graphics()
         FocusMixin.load_graphics(self)
 
     def layout(self):
-        super().layout()
+        super(FocusButton, self).layout()
         FocusMixin.layout(self)
 
     def unload_graphics(self):
-        super().unload_graphics()
+        super(FocusButton, self).unload_graphics()
         FocusMixin.unload_graphics(self)
 
     def on_key_press(self, symbol, modifiers):

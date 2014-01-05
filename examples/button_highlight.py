@@ -56,11 +56,11 @@ class HighlightedButton(Button, HighlightMixin):
         HighlightMixin.__init__(self)
 
     def load_graphics(self):
-        super().load_graphics()
+        super(HighlightedButton, self).load_graphics()
         HighlightMixin.load_graphics(self)
 
     def layout(self):
-        super().layout()
+        super(HighlightedButton, self).layout()
         HighlightMixin.layout(self)
 
     def unload_graphics(self):
